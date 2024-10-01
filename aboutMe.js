@@ -1,14 +1,23 @@
-const MyName =(displayAge) =>{
-    console.log("My Name is Megumi Ohara");
-    setTimeout (() =>{
-        const age= "I am 32 years old";
-        displayAge(age);
-    }, 2000);
+const printName = () => {
+    console.log("My name is Megumi Ohara");
 };
 
-const displayAge =(age) =>{
-    console.log(age);
+const printAge = () => {
+    console.log("I am 32 years old");
 };
 
-MyName();
+const printLocation = () => {
+    console.log("I was born in Honduras and now I live in Sweden");
+};
 
+const printHobbies = () => {
+    console.log("I like to read, try out food and travelling");
+};
+
+printName(() => {
+    printAge(() => {
+        printLocation(()=>{
+            printHobbies();
+        });
+    });
+});
