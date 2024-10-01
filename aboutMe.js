@@ -20,10 +20,9 @@ const printLocation = (displayLocation) => {
     
 };
 
-const printHobbies = (displayHobbies) => {
+const printHobbies = () => {
     setTimeout(() =>{
        console.log("I like to read, try out food and travelling");
-       displayHobbies();
     },2000)
     
 };
