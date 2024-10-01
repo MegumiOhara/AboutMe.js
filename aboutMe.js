@@ -1,17 +1,31 @@
-const printName = () => {
-    console.log("My name is Megumi Ohara");
+const printName = (displayName) => {
+    setTimeout(() =>{
+        console.log("My name is Megumi Ohara");
+        displayName();
+    }, 2000);
 };
 
-const printAge = () => {
-    console.log("I am 32 years old");
+const printAge = (displayAge) => {
+    setTimeout(() => {
+       console.log("I am 32 years old"); 
+       displayAge();
+    }, 2000);
 };
 
-const printLocation = () => {
-    console.log("I was born in Honduras and now I live in Sweden");
+const printLocation = (displayLocation) => {
+    setTimeout(() => {
+        console.log("I was born in Honduras and now I live in Sweden");
+        displayLocation();
+    }, 2000);
+    
 };
 
-const printHobbies = () => {
-    console.log("I like to read, try out food and travelling");
+const printHobbies = (displayHobbies) => {
+    setTimeout(() =>{
+       console.log("I like to read, try out food and travelling");
+       displayHobbies();
+    },2000)
+    
 };
 
 printName(() => {
